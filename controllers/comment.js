@@ -15,14 +15,13 @@ const createComment = async (req, res) => {
 }
 const getComments = async (req, res) => {
     const {lat, lng} = req.params;
-    console.log(req.params)
     if (!lat || !lng) {
         return res.status(400).json({message: "Missing latitufe or longtitude"});
     }
     try {
         const Comments = await Comment.find({lat: Number(lat), lng: Number(lng)});
         if (Comments.length === 0) {
-            return res.send("No comments found for this city")
+            return res.json([]);
         }
         res.status(200).json(Comments);
     } catch(error) {
