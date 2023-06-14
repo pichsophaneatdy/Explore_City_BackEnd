@@ -16,7 +16,7 @@ Welcome to Explore+City., a captivating full-stack application that revolutioniz
 ## Technologies 💻
 
 - Front-end:
-Link to Github Repository for Backend: https://github.com/pichsophaneatdy/Explore_City_FrontEnd
+Link to Frontend Repository: https://github.com/pichsophaneatdy/Explore_City_FrontEnd
   - HTML
   - CSS (including Sass)
   - JavaScript
